@@ -19,29 +19,6 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * is_numeric - Checks if a string is a numeric value.
- * @str: The string to check.
- * Return: 1 if numeric, 0 otherwise.
- */
-int is_numeric(char *str)
-{
-	if (!str)
-		return (0);
-
-	if (*str == '-' || *str == '+')
-		str++;
-
-	while (*str)
-	{
-		if (!isdigit(*str))
-			return (0);
-		str++;
-	}
-
-	return (1);
-}
-
-/**
  * push_stack - Pushes an element onto the stack.
  * @stack: Double pointer to the beginning of the stack.
  * @value: Value to push onto the stack.
