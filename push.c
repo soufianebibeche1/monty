@@ -5,7 +5,7 @@
  * @stack: Double pointer to the beginning of the stack.
  * @line_number: Line number in the Monty byte code file.
  */
-void _push(stack_t **stack, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
 	char *arg = strtok(NULL, " \n\t");
 
