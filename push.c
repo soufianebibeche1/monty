@@ -26,7 +26,7 @@ void push(stack_t **stack, unsigned int line_number)
 int is_numeric(char *str)
 {
 	if (!str)
-		return 0;
+		return (0);
 
 	if (*str == '-' || *str == '+')
 		str++;
@@ -34,11 +34,11 @@ int is_numeric(char *str)
 	while (*str)
 	{
 		if (!isdigit(*str))
-			return 0;
+			return (0);
 		str++;
 	}
 
-	return 1;
+	return (1);
 }
 
 /**
